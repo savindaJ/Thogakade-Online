@@ -516,6 +516,172 @@
         <!--item-->
         <section>
 
+            <section class="d-flex full-height flex-column col-10 col-md-10 bg-body-secondary shadow-lg rounded-4 m-auto mt-5"
+                     id="item">
+                <div class="container mt-3">
+
+                    <div class="d-flex justify-content-lg-end">
+
+                        <div class="row" style="width: 20vw">
+                            <div class="col-12 col-md-4">
+                                <button class="btn btn-dark btn-sm" type="submit" style="height: 30px">Get All</button>
+                            </div>
+
+                            <div class="col-12 col-md-8">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                        data-bs-target="#ItemModel-1" style="height: 30px">
+                                    + Add New
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <form class="row w-50" role="" method="">
+
+                        <div class="col-12 col-md-6">
+                            <input class="form-control me-2 mb-2 mb-lg-0" type="" placeholder="Enter Name/Code/Price"
+                                   aria-label="Search" id="txtSearchItem" style="width: 250px; height: 30px">
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <button class="btn btn-warning dropdown-toggle mb-2 mb-lg-0 btn-sm" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                Option
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Name</a></li>
+                                <li><a class="dropdown-item" href="#">Code</a></li>
+                                <li><a class="dropdown-item" href="#">Price</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-1">
+                            <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="row d-flex overflow-auto h-75 col-lg-10 col-12 m-auto z-0">
+                    <table class="table table-striped table-hover border" id="tblItem">
+                        <thead class="table-bordered sticky-top overflow-auto table-info">
+                        <tr>
+                            <th scope="col">Item Code</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Unit Price</th>
+                            <th scope="col">QTY On Hand</th>
+                            <th scope="col">Options</th>
+                        </tr>
+                        </thead>
+                        <tbody id="Item-body">
+                        <tr>
+                            <td>I001</td>
+                            <td>Rice</td>
+                            <td>220</td>
+                            <td>453</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#update-model">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ItemModel-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary">
+                            <h1 class="modal-title fs-6 text-white" id="item-h1">Insert Item</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label">Item ID</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Description</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Unit Price</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">QTY</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary">Add Item</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--update modal-->
+            <div class="modal fade" id="update-model" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-success">
+                            <h1 class="modal-title fs-6 text-white" id="item-update-h1">Update Item</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label"> Item ID</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Item Name</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Description</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">QTY</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary">Update Item</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
     </section>
