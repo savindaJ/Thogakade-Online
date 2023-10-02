@@ -135,177 +135,178 @@
             </section>
 
         </section>
-    </section>
 
-    <!--add customer section-->
-    <section>
-        <section class="d-flex full-height flex-column col-10 col-md-10 bg-body-secondary shadow-lg rounded-4 m-auto mt-5"
-                 id="customer">
+        <!--add customer section-->
+        <section>
+            <section class="d-flex full-height flex-column col-10 col-md-10 bg-body-secondary shadow-lg rounded-4 m-auto mt-5"
+                     id="customer">
 
-            <div class="container mt-1">
+                <div class="container mt-1">
 
-                <div class="d-flex justify-content-lg-end">
+                    <div class="d-flex justify-content-lg-end">
 
-                    <div class="row" style="width: 20vw">
-                        <div class="col-12 col-md-4 mt-1">
-                            <button class="btn btn-dark btn-sm" type="submit" style="height: 30px">Get All</button>
+                        <div class="row" style="width: 20vw">
+                            <div class="col-12 col-md-4 mt-1">
+                                <button class="btn btn-dark btn-sm" type="submit" style="height: 30px">Get All</button>
+                            </div>
+
+                            <div class="col-12 col-md-8 mt-1">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" style="height: 30px">
+                                    + Add New
+                                </button>
+                            </div>
+
                         </div>
-
-                        <div class="col-12 col-md-8 mt-1">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" style="height: 30px">
-                                + Add New
-                            </button>
-                        </div>
-
                     </div>
+
+                    <form class="row w-50" role="" method="">
+
+                        <div class="col-12 col-md-6 ">
+                            <input class="form-control me-2 mb-2 mb-lg-0 shadow-sm" type=""
+                                   placeholder="Enter Name/TP/Address"
+                                   aria-label="Search" id="txtSearch" style="height: 30px">
+                        </div>
+                        <div class="col-12 col-md-3 ">
+                            <button class="btn btn-warning dropdown-toggle mb-2 mb-lg-0 btn-sm me-2" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                Option
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Name</a></li>
+                                <li><a class="dropdown-item" href="#">Address</a></li>
+                                <li><a class="dropdown-item" href="#">TP</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-1">
+                            <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+                        </div>
+
+                    </form>
+
                 </div>
 
-                <form class="row w-50" role="" method="">
-
-                    <div class="col-12 col-md-6 ">
-                        <input class="form-control me-2 mb-2 mb-lg-0 shadow-sm" type=""
-                               placeholder="Enter Name/TP/Address"
-                               aria-label="Search" id="txtSearch" style="height: 30px">
-                    </div>
-                    <div class="col-12 col-md-3 ">
-                        <button class="btn btn-warning dropdown-toggle mb-2 mb-lg-0 btn-sm me-2" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            Option
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Name</a></li>
-                            <li><a class="dropdown-item" href="#">Address</a></li>
-                            <li><a class="dropdown-item" href="#">TP</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-12 col-md-1">
-                        <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
-                    </div>
-
-                </form>
-
-            </div>
-
-            <div class="row d-flex overflow-auto h-75 col-lg-10 col-12 m-auto">
-                <table class="table table-striped table-hover border mt-2 z-0" id="tblCustomer">
-                    <thead class="table-bordered sticky-top overflow-auto table-info">
-                    <tr>
-                        <th scope="col">Customer ID</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Address</th>
-                        <th scope="col">Salary</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                    </thead>
-                    <tbody id="body">
-                    <tr>
-                        <td>C001</td>
-                        <td>Savinda</td>
-                        <td>Matara</td>
-                        <td>120000.35</td>
-                        <td class="">
-                            <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">
-                                Edit
-                            </button>
-                            <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                        </td>
-                    </tr>
+                <div class="row d-flex overflow-auto h-75 col-lg-10 col-12 m-auto">
+                    <table class="table table-striped table-hover border mt-2 z-0" id="tblCustomer">
+                        <thead class="table-bordered sticky-top overflow-auto table-info">
+                        <tr>
+                            <th scope="col">Customer ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Salary</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody id="body">
+                        <tr>
+                            <td>C001</td>
+                            <td>Savinda</td>
+                            <td>Matara</td>
+                            <td>120000.35</td>
+                            <td class="">
+                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
+                            </td>
+                        </tr>
 
 
-                    <tr>
-                        <td>#</td>
-                        <td>First</td>
-                        <td>Last</td>
-                        <td>Handle</td>
-                        <td class="">
-                            <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">
-                                Edit
-                            </button>
-                            <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>First</td>
+                            <td>Last</td>
+                            <td>Handle</td>
+                            <td class="">
+                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>#</td>
-                        <td>First</td>
-                        <td>Last</td>
-                        <td>Handle</td>
-                        <td class="">
-                            <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">
-                                Edit
-                            </button>
-                            <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>First</td>
+                            <td>Last</td>
+                            <td>Handle</td>
+                            <td class="">
+                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>#</td>
-                        <td>First</td>
-                        <td>Last</td>
-                        <td>Handle</td>
-                        <td class="">
-                            <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">
-                                Edit
-                            </button>
-                            <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>First</td>
+                            <td>Last</td>
+                            <td>Handle</td>
+                            <td class="">
+                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>#</td>
-                        <td>First</td>
-                        <td>Last</td>
-                        <td>Handle</td>
-                        <td class="">
-                            <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">
-                                Edit
-                            </button>
-                            <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>First</td>
+                            <td>Last</td>
+                            <td>Handle</td>
+                            <td class="">
+                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>#</td>
-                        <td>First</td>
-                        <td>Last</td>
-                        <td>Handle</td>
-                        <td class="">
-                            <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">
-                                Edit
-                            </button>
-                            <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>#</td>
+                            <td>First</td>
+                            <td>Last</td>
+                            <td>Handle</td>
+                            <td class="">
+                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>#</td>
-                        <td>First</td>
-                        <td>Last</td>
-                        <td>Handle</td>
-                        <td class="">
-                            <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">
-                                Edit
-                            </button>
-                            <button class="btn btn-danger me-3 btn-sm">Delete</button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+                        <tr>
+                            <td>#</td>
+                            <td>First</td>
+                            <td>Last</td>
+                            <td>Handle</td>
+                            <td class="">
+                                <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                    Edit
+                                </button>
+                                <button class="btn btn-danger me-3 btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
 
 
+            </section>
         </section>
     </section>
+
 </main>
 
 <script src="assets/js/bootstrap.bundle.js"></script>
