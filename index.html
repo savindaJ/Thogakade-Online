@@ -685,7 +685,65 @@
         </section>
 
         <!--order detail-->
-        <section></section>
+        <section>
+
+            <section class="d-flex full-height flex-column col-9 col-md-10 bg-body-secondary shadow-lg rounded-4 m-auto mt-5"
+                     id="orderD">
+                <div class="container mt-3">
+
+                    <form class="row" role="" method="">
+
+                        <div class="col-12 col-md-4">
+                            <input class="form-control me-2 mb-2 mb-lg-0" type="" placeholder="Enter Name/TP/Address"
+                                   aria-label="Search" id="order-detail-txtSearch">
+                        </div>
+                        <div class=" col-md-2">
+                            <button class="btn btn-warning dropdown-toggle mb-2 mb-lg-0" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                Option
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Name</a></li>
+                                <li><a class="dropdown-item" href="#">Address</a></li>
+                                <li><a class="dropdown-item" href="#">TP</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-1">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="row d-flex overflow-auto h-75 col-lg-10 col-12 m-auto z-0">
+                    <table class="table table-striped table-hover border" id="tbl-order-detail">
+                        <thead class="table-bordered sticky-top overflow-auto table-info">
+                        <tr>
+                            <th scope="col">Order ID</th>
+                            <th scope="col">Customer ID</th>
+                            <th scope="col">Item ID</th>
+                            <th scope="col">QTY</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                        </thead>
+                        <tbody id="order-detail-body">
+                        <tr>
+                            <td>O001</td>
+                            <td>C001</td>
+                            <td>I001</td>
+                            <td>4</td>
+                            <td>2023/9/30</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+        </section>
 
     </section>
 </main>
